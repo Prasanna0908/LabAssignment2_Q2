@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
+        /* Universal Selector */
+        * {
             background-color: linen;
         }
 
+        /*Element Select */
         label {
             cursor: default;
         }
 
+        /* Class Selector*/
         .container {
             display: block;
             position: relative;
@@ -23,6 +26,7 @@
             font-size: 25px;
         }
 
+        /* Class Element Selector*/
         .container input {
             position: absolute;
             opacity: 0;
@@ -39,6 +43,7 @@
             border-radius: 50%;
         }
 
+        /* Pseudo Class Hover Hover and All inputs with check class */
         .container:hover input~.check {
             background-color: gray;
         }
@@ -47,6 +52,7 @@
             background-color: blue;
         }
 
+        /* Pseudo Class After*/
         .check:after {
             content: "";
             position: absolute;
@@ -112,10 +118,12 @@
             text-decoration: none;
         }
 
+        /*Pseudo Class Active */
         btn:active {
             background-color: yellow;
         }
 
+        /* Attribute Selector*/
         input[type=submit] {
             background-color: rgb(154, 223, 223);
             border-radius: 1rem;
